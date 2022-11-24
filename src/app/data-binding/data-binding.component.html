@@ -1,0 +1,20 @@
+<p>data-binding works!</p>
+<p>This is the data binding practice page </p>
+ 
+<label>{{count}}</label>&nbsp;,&nbsp;
+<label>{{name}}</label>
+
+
+<p> server with id {{serverId}}  and  {{getserverStatus()}}  </p>
+<button [disabled]="!allowNewServer"(click)="onCreateServer()"> add name</button>
+<div>{{ serverCreationStatus}}</div>
+
+
+<!-- <img [src]="imgUrl" width=200px height=200px> -->
+
+<div> Two way data binding example: </div>
+ 
+     <div> 
+        <input type ="text"[(ngModel)]="serverName ">
+     </div>
+{{serverName}}
