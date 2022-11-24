@@ -15,7 +15,7 @@ imgUrl= 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_lo
   
  
 serverCreationStatus:string='Server not created'
-serverName:string=' codemind.com123';
+serverName:string=' codemind.com143';
 
 
 
