@@ -8,6 +8,9 @@ import { WarningComponent } from './warningAlert/warning.component';
 import { SuccessAlertComponent } from './success-alert/success-alert.component';
 import { DataBindingComponent } from './data-binding/data-binding.component';
 import { FormsModule } from '@angular/forms';
+import { AssignDataBindingComponent } from './assign-data-binding/assign-data-binding.component';
+import { DemoDirectivesComponent } from './demo-directives/demo-directives.component';
+import { NgswitchComponent } from './ngswitch/ngswitch.component';
 
 @NgModule({
   declarations: [
@@ -16,6 +19,9 @@ import { FormsModule } from '@angular/forms';
     WarningComponent,
     SuccessAlertComponent,
     DataBindingComponent,
+    AssignDataBindingComponent,
+    DemoDirectivesComponent,
+    NgswitchComponent,
     
     
   ],

@@ -12,7 +12,7 @@ serverId:number=38;
 serverStatus:string='offline';
 allowNewServer:boolean=false;
 imgUrl= 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/512px-Typescript_logo_2020.svg.png?20221110153201'
-  
+  imgUrl2='https://www.pexels.com/photo/person-walking-between-green-forest-trees-15286/';
  
 serverCreationStatus:string='Server not created'
 serverName:string=' codemind.com143';

@@ -1,4 +1,4 @@
-<p>data-binding works!</p>
+  <p>data-binding works!</p>
 <p>This is the data binding practice page </p>
  
 <label>{{count}}</label>&nbsp;,&nbsp;
@@ -6,11 +6,12 @@
 
 
 <p> server with id {{serverId}}  and  {{getserverStatus()}}  </p>
-<button [disabled]="!allowNewServer"(click)="onCreateServer()"> add name</button>
-<div>{{ serverCreationStatus}}</div>
+<button [disabled]="!allowNewServer" class btn btn-primary(click)="onCreateServer()"> add name</button>
+<div>{{ serverCreationStatus}}</div>  
+  
 
-
-<!-- <img [src]="imgUrl" width=200px height=200px> -->
+<img [src]="imgUrl" ><br>
+<img [src]="imgUrl2">
 
 <div> Two way data binding example: </div>
  

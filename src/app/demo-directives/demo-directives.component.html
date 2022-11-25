@@ -1,0 +1,31 @@
+<h2 >  Example of *ngIf Directives!</h2> 
+ <p  *ngIf="isshow">-> Daiva patil</p> 
+     <!-- //base on condition work  -->
+<p  *ngIf="userName"> DaivaPatil123</p>
+ 
+<h3><u> Example of *ngFor Directives</u></h3>
+<div> 
+    <div>
+        {{title}}
+    </div>
+</div>
+<div>
+<table class ="table"> </table>
+<thead>
+    <tr>
+        <th> Title</th>
+        <th>Director </th>
+        <th>Cast </th>
+        <th> ReleaseDate</th>
+
+    </tr>
+</thead>
+<tbody>
+    <tr *ngFor="let  syntax of movies">
+<td>{{syntax.title}} </td>
+<td>{{syntax. director}} </td>
+<td>{{syntax.cast}} </td>
+<td>{{syntax.releaseDate}} </td>
+    </tr>
+</tbody>
+</div>
