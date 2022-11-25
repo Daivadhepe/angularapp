@@ -1,0 +1,14 @@
+h1{
+    background-color: rgb(235, 84, 84);
+}
+h2{
+    background-color: rgb(149, 79, 79);
+}
+.box1{
+    background-color: chartreuse;
+    padding-left: 30px;
+    border: solid 5px black;
+}
+ tr,td,th,table{
+    border:  solid 1px red;
+}

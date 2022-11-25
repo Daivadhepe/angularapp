@@ -1,0 +1,30 @@
+
+<div class="box1" > 
+  
+    <h1><u>  *ngSwitch structural directives example! </u></h1>
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+             <select class="form control" (change)="getProductValue($event)"> 
+                
+                <option value="Default" > Choose state</option>
+                <option value="Maharashtra" > Maharashtra</option>
+                <option value="Goa" > Goa</option>
+                <option value="UP" >  UP</option>
+                <option value="MP" >  mP</option>
+             </select>
+        </div>
+        <div class="col-md-12" [ngSwitch]="selectedProduct">
+<h2 class="text-success" *ngSwitchDefault> Please Choose state </h2>
+<h2 class="text-success" *ngSwitchCase="'Maharashtra'">Maharashtra </h2>
+<h2 class="text-success" *ngSwitchCase="'Goa'">Goa </h2>
+<h2 class="text-success" *ngSwitchCase="'UP'">UP </h2>
+<h2 class="text-success" *ngSwitchCase="'MP'">MP </h2>
+        </div>
+    </div>
+</div>
+
+
+
+
+</div>

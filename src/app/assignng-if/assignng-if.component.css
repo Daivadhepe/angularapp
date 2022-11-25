@@ -1,0 +1,15 @@
+h3{
+    background-color: rgb(226, 48, 48);
+    color: rgba(8, 8, 1, 0.81);
+}
+label{
+    background-color: rgb(216, 108, 14);
+    color: black;
+}
+.box1{
+     background-color: chartreuse;
+    color: rgba(19, 13, 5, 0.91);
+    padding-left: 20px;
+    border: solid 5px black;
+}
+     
