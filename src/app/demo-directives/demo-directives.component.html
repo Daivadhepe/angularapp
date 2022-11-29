@@ -21,7 +21,8 @@
     </tr>
 </thead>
 <tbody>
-    <tr *ngFor="let  syntax of movies">
+    <tr *ngFor="let  syntax of movies;let i=index;">
+        {{i+1}}
 <td>{{syntax.title}} </td>
 <td>{{syntax. director}} </td>
 <td>{{syntax.cast}} </td>

@@ -1,0 +1,28 @@
+ <h3>===========ngStyle Attributes====================</h3>
+ <div [ngStyle]="{'color':colorVar,'background-color':'#ddd','text-align':'center','font-size':'30px'}">
+    I am  Learning Angular 8</div>
+
+     
+<h3>============== ngClass attributes=================== </h3>
+<ul *ngFor="let person of people">
+    <li [ngClass]="{
+        'text-success': person.country === 'UK',
+        'text-primary': person.country === 'USA',
+        'text-danger': person.country === 'HK'
+    }">
+ 
+     {{person.name}} ,{{person.country}}
+    </li>
+</ul>
+<p> Normal para </p>
+<p appCuctom> custom para</p>
+<div appCuctom> custom directives </div>
+
+<div style="margin: left 300px; ;">
+<input type="text" name="" id="" #uusername>
+ </div>
+
+<button (click)="Show(uusername.value)">Show</button>
+<div>
+    {{uname}}
+</div>
