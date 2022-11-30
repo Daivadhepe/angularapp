@@ -23,5 +23,5 @@ people:any[]=[
 
   ngOnInit() {
   }
- 
+  
 }

@@ -17,8 +17,10 @@ import { AssignngSwitchComponent } from './assignng-switch/assignng-switch.compo
 import { AttributeComponent } from './attribute/attribute.component';
 import { CuctomDirective } from './cuctom.directive';
 import { AssignCustomDireDirective } from './assign-custom-dire.directive';
-import { CustomDirectiveComponent } from './custom-directive/custom-directive.component';
+ 
 import { NgClassAttributeComponent } from './ng-class-attribute/ng-class-attribute.component';
+import { ChildComponent } from './child/child.component';
+import { Child2Component } from './child2/child2.component';
 
 @NgModule({
   declarations: [
@@ -36,8 +38,10 @@ import { NgClassAttributeComponent } from './ng-class-attribute/ng-class-attribu
     AttributeComponent,
     CuctomDirective,
     AssignCustomDireDirective,
-    CustomDirectiveComponent,
+     
     NgClassAttributeComponent,
+    ChildComponent,
+    Child2Component,
     
     
   ],
@@ -45,7 +49,7 @@ import { NgClassAttributeComponent } from './ng-class-attribute/ng-class-attribu
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    FormGroup
+     
   ],
   providers: [],
   bootstrap: [AppComponent]
