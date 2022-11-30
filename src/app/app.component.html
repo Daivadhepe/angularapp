@@ -45,8 +45,12 @@
 
 <router-outlet></router-outlet>
 <app-server></app-server>-->
-<div class="position"> 
-   
-  <app-child [name]="data"></app-child> 
-  </div>
+<!-- <div class="position">  -->
+   <!-- <app-child [name]="data"></app-child>  -->
+<!-- </div> -->
+  <h1> Assignment on @Input  Decorator  </h1> 
+  <div *ngFor="let employee of EmployeeRecords"  >
+  <app-child2 [employee]="employee"></app-child2>
+</div>
+ 
       

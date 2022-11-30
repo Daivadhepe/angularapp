@@ -16,7 +16,11 @@ export class AppComponent {
     salary: 75000,
     dept: "HR"
   }
-
+EmployeeRecords:any[]=[
+  { eName:'Daiva',eCity:'Pune',eSalary:75000,eId:101,eCompany:'TCS'},
+  {eName:'Madhav',eCity:'Nanded',eSalary:45000 ,eId:102,eCompany:'Wipro'},
+  {eName:'Vivek',eCity:'Mumbai',eSalary:65000,eId:103,eCompany:'Info'},
+]
 
 
   
