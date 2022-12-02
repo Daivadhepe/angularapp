@@ -44,13 +44,43 @@
 </ul>
 
 <router-outlet></router-outlet>
+
+
+
 <app-server></app-server>-->
 <!-- <div class="position">  -->
    <!-- <app-child [name]="data"></app-child>  -->
 <!-- </div> -->
-  <h1> Assignment on @Input  Decorator  </h1> 
+  <!-- <h1> Assignment on @Input  Decorator  </h1> 
   <div *ngFor="let employee of EmployeeRecords"  >
   <app-child2 [employee]="employee"></app-child2>
-</div>
+</div> -->
+
+
+<!-- <ul *ngFor="let f of foods">
+  <li> 
+    {{f}}
+  </li>
+</ul>
+ <div>
+  <app-parent (foodevent)="getDataFromChild($event)"></app-parent>
+ </div> -->
+
+
+ <!-- <div>
+  <app-assign-output (productDetails)="getDtaFromOnput($event)"> </app-assign-output>
+ </div> -->
  
+
+<select (change)="uid=sid.value"#sid> 
+  <option selected disabled> No value selected </option>
+<option [value]=  "id" *ngFor="let id of [1,2,3,4]">
+  {{id}}
+</option>
+</select>
+ <app-hooks [userid] ="uid"></app-hooks>
       
+
+       <!-- <div>
+        <app-derevtives-assign> </app-derevtives-assign>
+       </div> -->

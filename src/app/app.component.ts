@@ -6,6 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  public uid:number;
   title = 'angularapp';
   fromParentToChild = 'I am from parent component';
   data = {
@@ -21,7 +22,16 @@ EmployeeRecords:any[]=[
   {eName:'Madhav',eCity:'Nanded',eSalary:45000 ,eId:102,eCompany:'Wipro'},
   {eName:'Vivek',eCity:'Mumbai',eSalary:65000,eId:103,eCompany:'Info'},
 ]
+foods:string[]=[];
+array:any[]=[];
+getDataFromChild(value){
+  console.log(value);
+  this.foods.push(value);
+}
+getDtaFromOnput(value){
+console.log(value);
+this.array=value;
 
-
+}
   
 }

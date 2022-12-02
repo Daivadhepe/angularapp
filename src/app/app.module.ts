@@ -21,6 +21,10 @@ import { AssignCustomDireDirective } from './assign-custom-dire.directive';
 import { NgClassAttributeComponent } from './ng-class-attribute/ng-class-attribute.component';
 import { ChildComponent } from './child/child.component';
 import { Child2Component } from './child2/child2.component';
+import { HooksComponent } from './hooks/hooks.component';
+import { ParentComponent } from './parent/parent.component';
+import { AssignOutputComponent } from './assign-output/assign-output.component';
+import { DerevtivesAssignComponent } from './derevtives-assign/derevtives-assign.component';
 
 @NgModule({
   declarations: [
@@ -42,6 +46,10 @@ import { Child2Component } from './child2/child2.component';
     NgClassAttributeComponent,
     ChildComponent,
     Child2Component,
+    HooksComponent,
+    ParentComponent,
+    AssignOutputComponent,
+    DerevtivesAssignComponent,
     
     
   ],
