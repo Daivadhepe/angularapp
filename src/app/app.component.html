@@ -71,16 +71,24 @@
   <app-assign-output (productDetails)="getDtaFromOnput($event)"> </app-assign-output>
  </div> -->
  
-
+<!-- 
 <select (change)="uid=sid.value"#sid> 
   <option selected disabled> No value selected </option>
 <option [value]=  "id" *ngFor="let id of [1,2,3,4]">
   {{id}}
 </option>
 </select>
- <app-hooks [userid] ="uid"></app-hooks>
-      
+ <app-hooks [userid] ="uid"></app-hooks> -->
+ <!-- <div class="assign">     
+<app-derevtives-assign></app-derevtives-assign>
+</div>  -->
 
-       <!-- <div>
-        <app-derevtives-assign> </app-derevtives-assign>
-       </div> -->
+
+<div  class="remove">
+  <app-add-remove-assign></app-add-remove-assign>
+</div>
+
+
+
+
+

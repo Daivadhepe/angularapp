@@ -1,0 +1,36 @@
+ 
+ <h1><i> <u>  Add and Remove  Bollywood Actress Name:- </u></i> </h1>
+ <div class="container">
+    <div class="raw">
+        <div class="col-md-12">
+<input #myUser type="text" class="form-control"[placeholder] ="actorName"> 
+<button (click)="onClick(myUser)" class="btn btn-danger mt-5"> Create user </button>
+
+ <table class= " table table-bordered black mt-5">
+<thead class="thead-light">
+    <tr class="bg-info">
+        <th> Sr . No</th>
+        <th>Actor Name </th>
+        <th> Delete Actor </th>
+    </tr>
+</thead>
+<tbody>
+    <tr *ngFor=" let i of actorList ; index as   userno">
+        <td>{{userno + 1}} </td>
+        <td>{{i}} </td>
+        
+        <td><button (click)="onDelete(userno)" class="btn btn-success"> Remove Actor</button> </td>
+    </tr>
+</tbody>
+ </table>
+
+
+
+
+
+
+
+ 
+        </div>
+    </div>
+ </div>

@@ -12,4 +12,15 @@ h1{
     background-color: rgb(220, 77, 77);
     border: solid 3px black;
 }
+.assign{
+    text-align: center;
+    
+}
+
+.remove{
+    text-align: center;
+  
+    background-image: url('D:\Angular\all topic nots\Notes HTMLTopic\extra images\blue background 1.jpeg');
+    border: solid 5px black;
+}
  

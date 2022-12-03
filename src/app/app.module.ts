@@ -25,6 +25,7 @@ import { HooksComponent } from './hooks/hooks.component';
 import { ParentComponent } from './parent/parent.component';
 import { AssignOutputComponent } from './assign-output/assign-output.component';
 import { DerevtivesAssignComponent } from './derevtives-assign/derevtives-assign.component';
+import { AddRemoveAssignComponent } from './add-remove-assign/add-remove-assign.component';
 
 @NgModule({
   declarations: [
@@ -50,6 +51,7 @@ import { DerevtivesAssignComponent } from './derevtives-assign/derevtives-assign
     ParentComponent,
     AssignOutputComponent,
     DerevtivesAssignComponent,
+    AddRemoveAssignComponent,
     
     
   ],

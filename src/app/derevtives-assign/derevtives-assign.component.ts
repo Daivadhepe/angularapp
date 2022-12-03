@@ -6,15 +6,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./derevtives-assign.component.css']
 })
 export class DerevtivesAssignComponent implements OnInit {
-  showSecret = false;
-  log = [];
+   showSecret=false;
+   log=[];
     constructor() { }
   
     ngOnInit() {
     }
-    onToggleDetails() {
+    onToggleDetails()
+    {
       this.showSecret = !this.showSecret;
-      this.log.push(this.log.length + 1) ;
+      this.log.push(this.log.length+1);
     }
   
 }
