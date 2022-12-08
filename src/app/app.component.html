@@ -71,24 +71,36 @@
   <app-assign-output (productDetails)="getDtaFromOnput($event)"> </app-assign-output>
  </div> -->
  
-<!-- 
-<select (change)="uid=sid.value"#sid> 
+ 
+<!-- <select (change)="uid=sid.value"#sid> 
   <option selected disabled> No value selected </option>
 <option [value]=  "id" *ngFor="let id of [1,2,3,4]">
   {{id}}
 </option>
 </select>
- <app-hooks [userid] ="uid"></app-hooks> -->
- <!-- <div class="assign">     
+    <app-hooks [userid] ="uid">
+      
+      <h1> today learn ngafterContentInit </h1>
+      <h2>this is child content coming from  parent component </h2>
+    <h3> this is me </h3>
+    </app-hooks>    -->
+  <!-- <div class="assign">     
 <app-derevtives-assign></app-derevtives-assign>
-</div>  -->
+</div>  --> 
 
 
-<div  class="remove">
+<!-- <div  class="remove">
   <app-add-remove-assign></app-add-remove-assign>
-</div>
+</div> -->
 
+<!-- <p> ==================================================================</p>
+<input type="text" (blur)="submitValue(val)">
+<input type="text" placeholder="Input here...." #val>
+<button (click)="submitValue(val)">  submit value</button>
+<app-life-cycle-hooks [data]="value"> </app-life-cycle-hooks> -->
 
+<!-- <p>==========================================================================</p>
+ <app-simpleform></app-simpleform> -->
 
-
-
+ <p> ===========================================================================</p>
+ <app-template-driven-assign> </app-template-driven-assign>

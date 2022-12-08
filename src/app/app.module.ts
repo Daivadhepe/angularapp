@@ -26,6 +26,10 @@ import { ParentComponent } from './parent/parent.component';
 import { AssignOutputComponent } from './assign-output/assign-output.component';
 import { DerevtivesAssignComponent } from './derevtives-assign/derevtives-assign.component';
 import { AddRemoveAssignComponent } from './add-remove-assign/add-remove-assign.component';
+import { LifeCycleHooksComponent } from './life-cycle-hooks/life-cycle-hooks.component';
+import { SimpleformComponent } from './simpleform/simpleform.component';
+import { TemplateDrivenAssignComponent } from './template-driven-assign/template-driven-assign.component';
+ 
 
 @NgModule({
   declarations: [
@@ -52,6 +56,9 @@ import { AddRemoveAssignComponent } from './add-remove-assign/add-remove-assign.
     AssignOutputComponent,
     DerevtivesAssignComponent,
     AddRemoveAssignComponent,
+    LifeCycleHooksComponent,
+    SimpleformComponent,
+    TemplateDrivenAssignComponent
     
     
   ],

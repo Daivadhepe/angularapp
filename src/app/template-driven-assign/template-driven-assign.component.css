@@ -1,0 +1,34 @@
+ 
+
+.h{
+    background-color: chartreuse;
+    border: 3px dotted black;
+    text-align: center;
+}
+  
+  .box1{
+    border: solid 5px black;
+   
+    
+   background-image: url("D:\Angular\all topic nots\Notes HTMLTopic\extra images\blue background 2.jpeg " ) ;
+   background-repeat: no-repeat;
+    text-align: center;
+ }
+
+ input[type="text"] {
+            
+     border: 2px solid black;
+     width: 400px; 
+    }
+    input[type="email"] {
+            
+        border: 2px solid black;
+        
+       }
+       
+       input[type="datetime"] {
+            
+        border: 2px solid black;
+        
+       }
+       

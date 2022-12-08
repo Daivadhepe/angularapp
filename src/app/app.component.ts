@@ -6,6 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  value:string
   public uid:number;
   title = 'angularapp';
   fromParentToChild = 'I am from parent component';
@@ -32,6 +33,9 @@ getDtaFromOnput(value){
 console.log(value);
 this.array=value;
 
+}
+submitValue(val ){
+  this.value =  val.value;
 }
   
 }

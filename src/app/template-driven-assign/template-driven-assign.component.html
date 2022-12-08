@@ -1,0 +1,98 @@
+
+<div class="h"> 
+
+<h3>template-driven-assignment !</h3>
+<h1> SRTMU  University Nanded  </h1></div>
+<div class="container">
+  <div class="row justify-content-center">
+
+    <div   class="box1">
+      <h2> Student Registration form </h2>
+      <form (ngSubmit)="OnSubmit(myForm)" #myForm="ngForm">
+        <table>
+          <tbody class="form-group">
+            <tr>
+              <td> <label for=" Name"> Name :- </label> </td>
+              <td> <input type="text" class="form-control" id="username" name="Name" placeholder="Enter  full name"  autofocus required ngModel> </td>
+            </tr>
+
+            <tr>
+              <td> <label for="DOB"> Date of Birth :- </label> </td>
+              <td> <input type="  datetime" class="form-control" id="DOB" name="DOB" placeholder=  "dd/mm/yyyy" required ngModel> </td>
+            </tr>
+
+            <tr>
+                <td> <label  for="Gender"> Sex :-  </label></td>
+                <td> <input type="radio" name="gender" checked> <label> Female </label>
+                    <input type="radio" name="gender"> <label> Male </label>
+                    <input type="radio" name="gender"> <label> Others </label></td>
+            </tr>
+
+            <tr>
+                <td> <label for="email">Email address :- </label> </td>
+                <td> <input type="email" class="form-control" id="email"  name="email"   placeholder="Enter email" required ngModel> </td>
+            </tr>
+
+            <tr>
+                <td><label for="school">  School :- </label> </td>
+                <td> <input type="text" class="form-control" id="school" name="school" placeholder="Enter school Name" required ngModel>  </td>
+            </tr>
+
+            <tr>
+                <td> <label for="dept">Select  Department :-  </label></td>
+                <td> <select>
+                        <option>  Mechanical Engineer </option>
+                        <option> Software  Engineer  </option>
+                        <option> Electrical Engineer  </option>
+                    </select></td>
+
+            </tr>
+
+            <tr>
+              <td> <label for="course">Select Course :- </label></td>
+              <td><select>
+                  <option>Angular</option>
+                  <option  >HTML</option>
+                  <option  >JavaScript</option>
+                </select> </td>
+            </tr>
+
+            <tr>
+                <td> <label> Mobile Number </label></td>
+                <td> <input type="number" placeholder="Mobile Number " required > </td>
+            </tr>
+
+            <tr>
+                <td> <label> Permanent Address </label></td>
+
+                <td> <textarea cols="30" rows="8" id="address"> </textarea></td>
+
+            </tr>
+
+            <tr>
+                <td> <input type="submit" class="btn btn-primary" [disabled]="!myForm.valid">  </td>
+                <td> <input type="Reset" class="btn btn-danger"> </td>
+            </tr>
+
+
+
+
+
+
+
+
+            
+          </tbody>
+        </table>
+
+
+
+
+
+
+
+
+      </form>
+    </div>
+  </div>
+</div>
