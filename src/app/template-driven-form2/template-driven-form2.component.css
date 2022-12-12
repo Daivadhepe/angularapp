@@ -1,0 +1,21 @@
+input.ng-invalid.ng-touched {
+    border: 1px solid red;
+    
+}
+ h1{
+    text-align: center;
+    background-color: rgb(85, 85, 233);
+    color: azure;
+    text-shadow: 12 14 px rgb(238, 135, 135);
+ }
+ label{
+    color: antiquewhite;
+    font-weight: 300;
+    font-style: italic;
+ }
+ .nested{
+    background-color: aqua;
+    color: brown;
+    border: solid 5px black;
+    text-align: center
+ }

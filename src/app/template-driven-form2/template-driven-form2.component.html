@@ -1,0 +1,109 @@
+ <h1> Simple Form Assignment-2 </h1>
+ <div class="contaner">
+   <div class="row justify-content-center">
+     <div class="col-md-6 text-left rounded-shadow  ">
+       <form (ngSubmit) ="OnSubmit (myForm)" #myForm="ngForm">
+        <h2> <u> Student Registration Form</u> </h2>
+         <div ngModelGroup="studentDetails">
+           <div class="form-group">
+             <label for="username"> User Name</label>
+             <input type="text" class="form-control" id="username" name="username" required
+               placeholder="Enter user name" [(ngModel)]="username">
+             <small *ngIf="username"> User name is :- {{username}}</small>
+           </div>
+           <div class="form-group">
+             <label for="email"> User Email</label>
+             <input type="email" class="form-control" id="email" name="email" email #email="ngModel" required
+               placeholder="enter user email" ngModel>
+             <small class="btn btn-danger" *ngIf="!email.valid && email.touched"> Enter valid email </small>
+           </div>
+           <div class="form-group">
+             <label for=" College"> User College </label>
+             <input type="text" class="form-control" id=" College" name=" College" required
+               placeholder="Enter  College Name" ngModel>
+           </div>
+           <div class="form-group">
+             <label for="DOB"> Date of birth </label>
+             <input type="date" class="form-control" id="DOB" name="DOB" required ngModel>
+           </div>
+           <div class="form-group">
+             <label for="number"> Contact Number </label>
+             <input type="number" class="form-control" id="number" name="number" required maxlength="10"
+               placeholder="Enter mobile number " ngModel>
+           </div>
+           <div class="form-group">
+             <label for=" pass"> Password</label>
+             <input type="password" class="form-control" id="pass" name="pass" required maxlength="08" ngModel
+               placeholder="Enter valid password ">
+             <p> Password maximum length 08 digit allow ....</p>
+           </div>
+           <div class="form-group">
+            <div *ngFor="let gender of genders" class="custom-control custom-radio">
+             <input type="radio" id="{{gender.id}}" name="gender" value="{{gender.value}}" [ngModel]="defaultGender" class="custom-control-input">
+             <label for="{{gender.id}}" class="custom-control-label">{{gender.value}}</label>
+            </div>
+        </div>
+           
+           <div class="form-group">
+             <label for="dept"> select department </label>
+             <select class="form-control " id="dept" name="dept" required [ngModel]="defaultValue">
+               <option value="Mechanical Engineer"> Mechanical Engineer </option>
+               <option value=" Civil Engineer"> Civil Engineer </option>
+               <option value="Electrical Engineer"> Electrical Engineer </option>
+               <option value="Computer Engineer "> Computer Engineer </option>
+
+             </select>
+
+           </div>
+           <div class="form-group">
+             <label for="course"> select Course </label>
+             <select class="form-control " id="course" name="course" required [ngModel]="defaultCourse">
+               <option value=" Angular"> Angular </option>
+               <option value=" JAVA"> JAVA </option>
+               <option value="React "> React </option>
+               <option value="Testing "> Testing </option>
+             </select>
+           </div>
+         </div>
+         <div class="form-group">
+           <label for="country"> Country</label>
+           <input type="text" class="form-control" id="country" name="country"   ngModel placeholder="INDIA">
+         </div>
+         <div class="form-group">
+           <label for="State"> State</label>
+           <input type="text" class="form-control" id="State" name="State" ngModel placeholder="State">
+         </div>
+         <div class="form-group">
+           <label for="City"> City</label>
+           <input type="text" class="form-control" id="City" name="City" ngModel placeholder="City">
+         </div>
+         <div class="form-group">
+           <label for="Village">Village</label>
+           <input type="text" class="form-control" id="Village" name="Village" ngModel placeholder="Village">
+         </div>
+         <div class="form-group">
+           <label for="PinCode">PinCode</label>
+           <input type="number" class="form-control" id="PinCode" name="PinCode" ngModel placeholder="PinCode">
+         </div>
+         <button type="submit" class="btn btn-primary" [disabled]="!myForm.valid">Submit</button>
+         <div class="nested"> 
+         <div class="row justify-content-center mt-2" *ngIf="submitted">
+           <div class="col-md-6 rounded shadow py-4">
+             <h2>Student Address</h2>
+             <p> Country:- <strong>{{ address.country}} </strong></p>
+             <p> State:- <strong>{{address.State}} </strong></p>
+             <p>City:- <strong>{{address.City}} </strong></p>
+             <p>Village:- <strong>{{address.Village}} </strong></p>
+             <p> PinCode:-<strong> {{address.PinCode}}</strong></p>
+
+           </div>
+
+         </div>
+        </div>
+
+       </form>
+
+     </div>
+
+   </div>
+ </div>

@@ -29,6 +29,8 @@ import { AddRemoveAssignComponent } from './add-remove-assign/add-remove-assign.
 import { LifeCycleHooksComponent } from './life-cycle-hooks/life-cycle-hooks.component';
 import { SimpleformComponent } from './simpleform/simpleform.component';
 import { TemplateDrivenAssignComponent } from './template-driven-assign/template-driven-assign.component';
+import { TemplateDrivenForm2Component } from './template-driven-form2/template-driven-form2.component';
+import { ReactiveFormComponent } from './reactive-form/reactive-form.component';
  
 
 @NgModule({
@@ -58,7 +60,9 @@ import { TemplateDrivenAssignComponent } from './template-driven-assign/template
     AddRemoveAssignComponent,
     LifeCycleHooksComponent,
     SimpleformComponent,
-    TemplateDrivenAssignComponent
+    TemplateDrivenAssignComponent,
+    TemplateDrivenForm2Component,
+    ReactiveFormComponent
     
     
   ],
