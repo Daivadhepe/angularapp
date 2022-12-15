@@ -27,4 +27,10 @@ h1{
     background-image: url("D:\Angular\all topic nots\Notes HTMLTopic\extra images\background image 2.jpeg");
     border: solid whitesmoke 5px;
 }
- 
+  .val{
+    background-color: rgb(73, 73, 238);
+  }
+   .abc{
+    background-color: black;
+    color: azure;
+   }

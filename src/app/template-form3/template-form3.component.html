@@ -1,0 +1,56 @@
+ <div class="container">
+   <div class="row justify-content-center ">
+     <div class="col-md-6 text-left rounded-shadow py-5">
+       <form (ngSubmit)="onSubmit(myForm)" #myForm="ngForm">
+         <div class="form-group">
+           <label for="name"> UserName </label>
+           <input type="text" class="form-control" id="name" name="name" required placeholder="Enter user Name"
+             [(ngModel)]="name">
+           <small style="color: rgb(5, 210, 73); font-size: 20px;" *ngIf="name"> user name is : {{name}} </small>
+         </div>
+         <div class="form-group">
+           <label for="email"> User Email </label>
+           <input type="email" class="form-control" id="email" name="email" placeholder="ABC@gmail.com" email
+ required ngModel>
+           <small style="color: rgb(8, 243, 8); font-size: 20px;"> Please enter valid email </small>
+         </div>
+         <div class="form-group">
+           <label for="sub"> Select subscription </label>
+           <select class="form-control" id="sub" name="sub" [ngModel]="defaultsub">
+             <option value="Basic"> Basic</option>
+             <option value="Advance"> Advance </option>
+             <option value="Pro"> Pro</option>
+
+           </select>
+
+         </div>
+         <div class="form-group">
+           <label for="pass"> User Password</label>
+           <input type="password" class="form-control" id="pass" name="pass" required max="08" ngModel
+             placeholder="Enter valid password" #password="ngModel">
+           <small style="color: rgb(17, 240, 9); font-size: 20px;"> Please enter valid password </small>
+         </div>
+        <div>
+           <input type="submit" class="btn btn-danger mt-2 mb-2">
+           <input type="reset" class="btn btn-success  mt-2 mb-2" style="margin-left: 20px;">
+         </div>
+        <div class="nested">
+            <div class="row justify-content-center" *ngIf="submitted">
+<div class="col-md-6 rounded-shadow">
+    <h2> User Details </h2>
+<p> User Name :-  <strong>{{data.name}}</strong></p>
+<p> User  Email :- <strong>{{data.email}}</strong></p>
+<p> User  subscription :- <strong>{{data.sub}}</strong></p>
+<p> User Password :- <strong>{{data.pass}}</strong></p>
+</div>
+
+            </div>
+
+        </div>
+       </form>
+
+     </div>
+ 
+
+   </div>
+ </div>

@@ -1,0 +1,10 @@
+ 
+
+  <div class="form-group">
+    <label for="course">Select Course</label>
+    <select class="form-control" name="course" id="course" [ngModel]="defaultValue"(change)="getSelectedValue($event)">
+      <option value="Angular">Angular</option>
+      <option value="HTML">HTML</option>
+      <option value="JavaScript">JavaScript</option>
+    </select>
+  </div>

@@ -7,7 +7,7 @@ import { AppComponent } from './app.component';
 import { WarningComponent } from './warningAlert/warning.component';
 import { SuccessAlertComponent } from './success-alert/success-alert.component';
 import { DataBindingComponent } from './data-binding/data-binding.component';
-import { FormGroup, FormsModule } from '@angular/forms';
+import { FormGroup, FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AssignDataBindingComponent } from './assign-data-binding/assign-data-binding.component';
 import { DemoDirectivesComponent } from './demo-directives/demo-directives.component';
 import { NgswitchComponent } from './ngswitch/ngswitch.component';
@@ -31,6 +31,10 @@ import { SimpleformComponent } from './simpleform/simpleform.component';
 import { TemplateDrivenAssignComponent } from './template-driven-assign/template-driven-assign.component';
 import { TemplateDrivenForm2Component } from './template-driven-form2/template-driven-form2.component';
 import { ReactiveFormComponent } from './reactive-form/reactive-form.component';
+import { ValidationTemplateFormComponent } from './validation-template-form/validation-template-form.component';
+import { ValidationTemplateForm2Component } from './validation-template-form2/validation-template-form2.component';
+import { ReuderadioComponent } from './reuderadio/reuderadio.component';
+import { TemplateForm3Component } from './template-form3/template-form3.component';
  
 
 @NgModule({
@@ -62,7 +66,11 @@ import { ReactiveFormComponent } from './reactive-form/reactive-form.component';
     SimpleformComponent,
     TemplateDrivenAssignComponent,
     TemplateDrivenForm2Component,
-    ReactiveFormComponent
+    ReactiveFormComponent,
+    ValidationTemplateFormComponent,
+    ValidationTemplateForm2Component,
+    ReuderadioComponent,
+    TemplateForm3Component
     
     
   ],
@@ -70,6 +78,7 @@ import { ReactiveFormComponent } from './reactive-form/reactive-form.component';
     BrowserModule,
     AppRoutingModule,
     FormsModule,
+    ReactiveFormsModule,
      
   ],
   providers: [],
