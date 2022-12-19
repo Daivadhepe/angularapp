@@ -30,11 +30,13 @@ import { LifeCycleHooksComponent } from './life-cycle-hooks/life-cycle-hooks.com
 import { SimpleformComponent } from './simpleform/simpleform.component';
 import { TemplateDrivenAssignComponent } from './template-driven-assign/template-driven-assign.component';
 import { TemplateDrivenForm2Component } from './template-driven-form2/template-driven-form2.component';
-import { ReactiveFormComponent } from './reactive-form/reactive-form.component';
-import { ValidationTemplateFormComponent } from './validation-template-form/validation-template-form.component';
+ import { ValidationTemplateFormComponent } from './validation-template-form/validation-template-form.component';
 import { ValidationTemplateForm2Component } from './validation-template-form2/validation-template-form2.component';
-import { ReuderadioComponent } from './reuderadio/reuderadio.component';
-import { TemplateForm3Component } from './template-form3/template-form3.component';
+ import { TemplateForm3Component } from './template-form3/template-form3.component';
+import { ReactiveformComponent } from './sir/reactiveform.component';
+import { ReactiveFormAssignComponent } from './reactive-form-assign/reactive-form-assign.component';
+import { ReactiveTemplateAssignComponent } from './reactive-template-assign/reactive-template-assign.component';
+ 
  
 
 @NgModule({
@@ -66,11 +68,12 @@ import { TemplateForm3Component } from './template-form3/template-form3.componen
     SimpleformComponent,
     TemplateDrivenAssignComponent,
     TemplateDrivenForm2Component,
-    ReactiveFormComponent,
     ValidationTemplateFormComponent,
     ValidationTemplateForm2Component,
-    ReuderadioComponent,
-    TemplateForm3Component
+    TemplateForm3Component,
+    ReactiveformComponent,
+    ReactiveFormAssignComponent,
+    ReactiveTemplateAssignComponent,
     
     
   ],

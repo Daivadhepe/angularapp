@@ -1,0 +1,23 @@
+input.ng-invalid.ng-touched {
+    border: 1px solid red;
+    box-shadow: 5px 5px 5px  5px rgb(238, 75, 75);
+}
+
+.btn-add {
+    font-size: 12px;
+    font-weight: 700;
+    color: rgba(0, 0, 0, 0.397);
+}
+.btn-add i {
+    font-size: 30px;
+    line-height: 15px;
+    display: inline-block;
+    position: relative;
+    top: 7px;
+    margin-right: 3px;
+}
+.btn-add:hover{
+    border: 1px solid #007bff;
+    background: rgb(233, 43, 160);
+    color: #000407d6;
+}
