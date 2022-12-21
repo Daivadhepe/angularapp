@@ -1,0 +1,10 @@
+<p>service-comp2 works!</p>
+
+
+<button (click)="OnSubscribe()"> Subscribe</button>
+<br>
+<ng-container *ngFor="let object of Employee">
+    Employee ID :- <strong class="text-danger"> {{object.id}}</strong>
+    Employee Name :- <strong class="text-danger"> {{object.name}}</strong>
+<br>
+</ng-container>

@@ -1,0 +1,18 @@
+<p>service-comp1 works!</p>
+
+<button (click)="OnSubscribe()"> Subscribe</button>
+<br>
+  <ng-container *ngFor="let product of productss">
+Product Name :- <strong class="text-success">{{product.name}}</strong>
+Product ID :- <strong class="text-success">{{product.id}}</strong>
+
+<br>
+</ng-container>
+<p>================================</p>
+<br>
+<ng-container *ngFor="let object of Employee">
+    Employee ID :- <strong class="text-danger"> {{object.id}}</strong>
+    Employee Name :- <strong class="text-danger"> {{object.name}}</strong>
+<br>
+</ng-container>
+<p>================================</p>

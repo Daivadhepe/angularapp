@@ -34,3 +34,10 @@ h1{
     background-color: black;
     color: azure;
    }
+     .http{
+        background-image: url("D:\Angular\all topic nots\Notes HTMLTopic\extra images\blue background 2.jpeg");
+     }
+     .project{
+        text-align: center;
+        background-color: blueviolet;
+     }

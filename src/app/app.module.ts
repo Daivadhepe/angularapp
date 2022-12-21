@@ -34,8 +34,19 @@ import { TemplateDrivenForm2Component } from './template-driven-form2/template-d
 import { ValidationTemplateForm2Component } from './validation-template-form2/validation-template-form2.component';
  import { TemplateForm3Component } from './template-form3/template-form3.component';
 import { ReactiveformComponent } from './sir/reactiveform.component';
-import { ReactiveFormAssignComponent } from './reactive-form-assign/reactive-form-assign.component';
+ 
 import { ReactiveTemplateAssignComponent } from './reactive-template-assign/reactive-template-assign.component';
+import { ServiceComp1Component } from './service-comp1/service-comp1.component';
+import { ServiceComp2Component } from './service-comp2/service-comp2.component';
+ 
+ 
+ import {HttpClientModule } from  '@angular/common/http';
+import { ReactProjectFormComponent } from './react-project-form/react-project-form.component';
+import { Comp1Component } from './comp1/comp1.component';
+import { Comp2Component } from './comp2/comp2.component';
+import { Comp3Component } from './comp3/comp3.component';
+import { Comp4Component } from './comp4/comp4.component';
+ 
  
  
 
@@ -72,8 +83,18 @@ import { ReactiveTemplateAssignComponent } from './reactive-template-assign/reac
     ValidationTemplateForm2Component,
     TemplateForm3Component,
     ReactiveformComponent,
-    ReactiveFormAssignComponent,
+    
     ReactiveTemplateAssignComponent,
+    ServiceComp1Component,
+    ServiceComp2Component,
+    ReactProjectFormComponent,
+    Comp1Component,
+    Comp2Component,
+    Comp3Component,
+    Comp4Component,
+    
+    
+    
     
     
   ],
@@ -82,9 +103,9 @@ import { ReactiveTemplateAssignComponent } from './reactive-template-assign/reac
     AppRoutingModule,
     FormsModule,
     ReactiveFormsModule,
-     
+     HttpClientModule,
   ],
-  providers: [],
+  providers: [ ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
