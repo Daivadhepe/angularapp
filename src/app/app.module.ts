@@ -46,6 +46,11 @@ import { Comp1Component } from './comp1/comp1.component';
 import { Comp2Component } from './comp2/comp2.component';
 import { Comp3Component } from './comp3/comp3.component';
 import { Comp4Component } from './comp4/comp4.component';
+import { CompAComponent } from './comp-a/comp-a.component';
+import { CompBComponent } from './comp-b/comp-b.component';
+import { CompCComponent } from './comp-c/comp-c.component';
+import { PipesDemoComponent } from './pipes-demo/pipes-demo.component';
+import { CountPipe } from './count.pipe';
  
  
  
@@ -92,6 +97,11 @@ import { Comp4Component } from './comp4/comp4.component';
     Comp2Component,
     Comp3Component,
     Comp4Component,
+    CompAComponent,
+    CompBComponent,
+    CompCComponent,
+    PipesDemoComponent,
+    CountPipe,
     
     
     

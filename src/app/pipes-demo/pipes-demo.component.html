@@ -1,0 +1,40 @@
+<p>pipes-demo works!</p>
+<div>
+    <h3> Date </h3>
+    Today's Date Simple  :- {{ todaysDate}} <br>
+    Today's date using pipe date :- {{todaysDate | date}}<br>
+    Today's date using pipe  formate :- {{todaysDate | date:'M/dd/yyyy'}}<br>
+    Today's date using pipe  fullDate:- {{todaysDate | date:'fullDate'}}<br>
+    Today's date using pipe  shortDate:- {{todaysDate | date:'shortDate'}}<br>
+</div>
+<div>
+    <h3> Chaining </h3>
+    Today's date using pipe  fullDate in uppercase :- {{todaysDate | date:'fullDate' | uppercase}}<br>
+    Today's date using pipe  fullDate in lowercase :- {{todaysDate | date:'fullDate' | lowercase}}<br>
+</div>
+
+<div> 
+<h3> async </h3> 
+<!-- async subscribe internally  -->
+<!-- async implicitly subscribe to an obseravlabel -->
+<!-- use async you can subscribe internally particular obseravalabel you can get transmitted values l -->
+ get value :-----{{obser | async}}
+</div>
+
+<div>
+    <h3> Currency pipes </h3>
+    <div>
+       number:-   {{price}}<br>
+       india:   {{price | currency:'INR'}}<br>
+       America: {{price| currency:'USD'}}<br>
+       Poland: {{price| currency:'EUR'}}<br>
+    </div>
+    <div>
+        <h3> Object </h3>
+       object :-   {{obj | json}}
+    </div>
+</div>
+<div>
+    <h3>Custom pipe </h3>
+    length :-  {{price | count}}
+</div>

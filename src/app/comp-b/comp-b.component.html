@@ -1,0 +1,19 @@
+<p>comp-b works!</p>
+<div class="box">
+    Employee Id :- <strong>{{id.value}}</strong><br>
+    Employee Name :- <strong>{{name.value}}</strong><br>
+    Employee Salary :- <strong>{{salary.value}}</strong><br>
+    Employee Company :- <strong>{{company.value}}</strong><br>
+    Employee City :- <strong>{{city.value}}</strong><br>
+
+
+<input type="text" placeholder="Enter ID " #id><br>
+<input type="text" placeholder="Enter Name " #name><br>
+<input type="text" placeholder="Enter Salary" #salary><br>
+<input type="text" placeholder="Enter Company " #company><br>
+<input type="text" placeholder="Enter City " #city><br>
+
+<button (click)="updateEmployee(id,name,salary,company,city)"> Update</button>
+</div>
+<br>
+

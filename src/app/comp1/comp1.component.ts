@@ -11,14 +11,21 @@ export class Comp1Component implements OnInit {
   constructor(private _utilityService: UtilityService) { 
  this._utilityService.userName.subscribe(res =>{
   this.userName = res;
+  console.log(res);
+  
  })
   }
 
   ngOnInit() {
   }
   updateUserName(uname){
-console.log(uname.value);
-this._utilityService.userName.next(uname.value);
+// console.log(uname.value);
+let emp = {
+  name:'Dnyanesh',
+  id:'101'
+}
+this._utilityService.userName.next(JSON.stringify(emp));
+// this._utilityService.userName.next(uname.value);
 // next method is used to send massege to an obserable i.e userName
   }
 }
