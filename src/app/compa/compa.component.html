@@ -1,0 +1,28 @@
+<div class="container">
+<div class="row justify-content-center">
+<h2>Subject Assignment Comp-a Works!</h2>
+<table class="table caption-top">
+<thead>
+<tr>
+    <th scope="col"> Employee ID</th>
+    <th scope="col"> Employee Name</th>
+    <th scope="col"> Employee Company</th>
+    <th scope="col"> Employee Salary </th>
+   
+</tr>
+
+</thead>
+<tbody>
+<tr *ngFor="let object of emp">
+<td> {{object.empId}}</td>
+<td> {{object.empName}}</td>
+<td> {{object.empCompany}}</td>
+<td> {{object.empSalary}}</td>
+</tr>
+</tbody>
+</table>
+<small>
+<button class="btn btn-danger" (click)="UpdateEmpdata()">Update Data</button>
+</small>
+</div>
+</div>
