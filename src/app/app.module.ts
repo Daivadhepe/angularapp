@@ -15,13 +15,13 @@ import { AssignngIfComponent } from './assignng-if/assignng-if.component';
 import { AssignngForDirectivesComponent } from './assignng-for-directives/assignng-for-directives.component';
 import { AssignngSwitchComponent } from './assignng-switch/assignng-switch.component';
 import { AttributeComponent } from './attribute/attribute.component';
-import { CuctomDirective } from './cuctom.directive';
+ 
 import { AssignCustomDireDirective } from './assign-custom-dire.directive';
  
 import { NgClassAttributeComponent } from './ng-class-attribute/ng-class-attribute.component';
 import { ChildComponent } from './child/child.component';
 import { Child2Component } from './child2/child2.component';
-import { HooksComponent } from './hooks/hooks.component';
+ 
 import { ParentComponent } from './parent/parent.component';
 import { AssignOutputComponent } from './assign-output/assign-output.component';
 import { DerevtivesAssignComponent } from './derevtives-assign/derevtives-assign.component';
@@ -53,6 +53,8 @@ import { CompaComponent } from './compa/compa.component';
 import { CompbComponent } from './compb/compb.component';
 import { AssignPipe1Pipe } from './pipes/assign-pipe1.pipe';
 import { PipeAssign1Component } from './pipe-assign1/pipe-assign1.component';
+import { FilterPipeComponent } from './filter-pipe/filter-pipe.component';
+import { FilterPipePipe } from './pipes/filter-pipe.pipe';
  
  
  
@@ -71,13 +73,13 @@ import { PipeAssign1Component } from './pipe-assign1/pipe-assign1.component';
     AssignngForDirectivesComponent,
     AssignngSwitchComponent,
     AttributeComponent,
-    CuctomDirective,
+    
     AssignCustomDireDirective,
      
     NgClassAttributeComponent,
     ChildComponent,
     Child2Component,
-    HooksComponent,
+    
     ParentComponent,
     AssignOutputComponent,
     DerevtivesAssignComponent,
@@ -106,6 +108,8 @@ import { PipeAssign1Component } from './pipe-assign1/pipe-assign1.component';
     CompbComponent,
     AssignPipe1Pipe,
     PipeAssign1Component,
+    FilterPipeComponent,
+    FilterPipePipe,
     
     
     
