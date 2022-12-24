@@ -5,8 +5,9 @@ import { Pipe, PipeTransform } from '@angular/core';
 })
 export class AssignPipe1Pipe implements PipeTransform {
 
-  transform(value: any, ...args: any[]): any {
-    return null;
+  transform( val:any): any {
+    return  val.toString().length;
   }
+   
 
 }

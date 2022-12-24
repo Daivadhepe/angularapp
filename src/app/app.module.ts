@@ -51,10 +51,14 @@ import { PipesDemoComponent } from './pipes-demo/pipes-demo.component';
 import { CountPipe } from './count.pipe';
 import { CompaComponent } from './compa/compa.component';
 import { CompbComponent } from './compb/compb.component';
-import { AssignPipe1Pipe } from './pipes/assign-pipe1.pipe';
+import { AssignPipe1Pipe } from './pipes/assign-1  pipe.pipe';
 import { PipeAssign1Component } from './pipe-assign1/pipe-assign1.component';
 import { FilterPipeComponent } from './filter-pipe/filter-pipe.component';
 import { FilterPipePipe } from './pipes/filter-pipe.pipe';
+import { AboutusComponent } from './aboutus/aboutus.component';
+import { ProductComponent } from './product/product.component';
+import { ContactusComponent } from './contactus/contactus.component';
+import { HomeComponent } from './home/home.component';
  
  
  
@@ -110,6 +114,10 @@ import { FilterPipePipe } from './pipes/filter-pipe.pipe';
     PipeAssign1Component,
     FilterPipeComponent,
     FilterPipePipe,
+    AboutusComponent,
+    ProductComponent,
+    ContactusComponent,
+    HomeComponent,
     
     
     

@@ -1,1 +1,59 @@
+
+<div class="container">
+
+
 <p>pipe-assign1 works!</p>
+<h2> Practicing on Pipes </h2>
+<h4> 1 = Built_in_pipe </h4>
+<h1>Date</h1>
+<div>
+    Today's Given  Date is :- {{PresentDate}}<br>
+    Short Date :- {{PresentDate | date:'shortDate'}}<br>
+   Full Date :- {{PresentDate | date:'fullDate'}}<br>
+   Date in format :- {{PresentDate | date:'M/dd/yyyy'}}<br>
+</div>
+
+<div>
+    <h4>2=  Chaining Pipe </h4>
+    Today's Date in Lowercase :- {{PresentDate | date:'fullDate' | lowercase}}<br>
+    Today's Date in Uppercase :- {{PresentDate | date:'fullDate' | uppercase}}<br>
+   
+</div>
+<h1> Title case </h1>
+<div>
+    Given Name :- {{Name}}<br>
+    using titlecase  :- {{Name | titlecase}}<br>
+     Uppercase   :- {{Name | titlecase | uppercase}}<br>
+ Lowercase  :- {{Name | titlecase | lowercase}}<br>
+</div> 
+<h1> Currency Pipe </h1>
+<div>
+    Given price :- {{price}}<br>
+    Indian  Rupees  :- {{price | currency:'INR'}}<br>
+    In Dollar   :- {{price | currency:'USD'}}<br>
+    In  Erose   :- {{price | currency:'EUR'}}<br>
+</div>
+<h1>Async Pipe </h1>
+<div>
+    getvalue from service :- {{observable | async}}<br>
+    getvalue from service in Uppercase :- {{observable | async | uppercase}}<br>
+    getvalue from service  in Lowercase:- {{observable | async | lowercase}}<br>
+</div>
+
+<h1> json pipe </h1>
+ <div>
+    {{obj | json}}
+ </div>
+ <h1> Custom Pipe </h1>
+ <div>
+    Given val :- {{price}}<br>
+   <h2> val length :- {{price | assignPipe1}}<br> </h2>
+    Given Name :- {{Name}}<br>
+   <h2>  Name length:- {{Name | assignPipe1}}<br></h2>
+    Given Observable :- {{observable | async }}<br>
+ <h2>   <strong>Observable  length :- </strong>   {{observable | async | assignPipe1}}</h2>
+
+ 
+ </div>
+</div>
+ 

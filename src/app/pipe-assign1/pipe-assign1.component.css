@@ -1,0 +1,17 @@
+h1{
+    background-color: aqua;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.container{
+    text-align: center;
+    border: 5px  double red ;
+}
+div{
+    background-color: rgb(180, 229, 188);
+    font-size: 30px;
+}
+h2{
+    font-size: 40px;
+    background-color: blue;
+    color: azure;
+}
