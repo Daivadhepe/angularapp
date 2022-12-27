@@ -59,6 +59,15 @@ import { AboutusComponent } from './aboutus/aboutus.component';
 import { ProductComponent } from './product/product.component';
 import { ContactusComponent } from './contactus/contactus.component';
 import { HomeComponent } from './home/home.component';
+import { LoginComponent } from './login/login.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { TvComponent } from './product/tv/tv.component';
+import { LaptopComponent } from './product/laptop/laptop.component';
+import { TabletComponent } from './product/tablet/tablet.component';
+import { WashingmachinComponent } from './product/washingmachin/washingmachin.component';
+import { GenderPipe } from './pipes/gender.pipe';
+import { SearchGenderPipe } from './pipes/search-gender.pipe';
+import { CustomPipeAssignComponent } from './custom-pipe-assign/custom-pipe-assign.component';
  
  
  
@@ -118,6 +127,15 @@ import { HomeComponent } from './home/home.component';
     ProductComponent,
     ContactusComponent,
     HomeComponent,
+    LoginComponent,
+    PageNotFoundComponent,
+    TvComponent,
+    LaptopComponent,
+    TabletComponent,
+    WashingmachinComponent,
+    GenderPipe,
+    SearchGenderPipe,
+    CustomPipeAssignComponent,
     
     
     
