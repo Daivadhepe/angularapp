@@ -68,6 +68,16 @@ import { WashingmachinComponent } from './product/washingmachin/washingmachin.co
 import { GenderPipe } from './pipes/gender.pipe';
 import { SearchGenderPipe } from './pipes/search-gender.pipe';
 import { CustomPipeAssignComponent } from './custom-pipe-assign/custom-pipe-assign.component';
+import { AHomeComponent } from './ahome/ahome.component';
+import { AloginPageComponent } from './alogin-page/alogin-page.component';
+ 
+import { AProductComponent } from './aproduct/aproduct.component';
+import { APageNotFoundComponent } from './apage-not-found/apage-not-found.component';
+import { AContactUsComponent } from './acontact-us/acontact-us.component';
+import { DressComponent } from './aproduct/dress/dress.component';
+import { ToysComponent } from './aproduct/toys/toys.component';
+import { JwelleryComponent } from './aproduct/jwellery/jwellery.component';
+import { StationeryComponent } from './aproduct/stationery/stationery.component';
  
  
  
@@ -136,6 +146,16 @@ import { CustomPipeAssignComponent } from './custom-pipe-assign/custom-pipe-assi
     GenderPipe,
     SearchGenderPipe,
     CustomPipeAssignComponent,
+    AHomeComponent,
+    AloginPageComponent,
+    
+    AProductComponent,
+    APageNotFoundComponent,
+    AContactUsComponent,
+    DressComponent,
+    ToysComponent,
+    JwelleryComponent,
+    StationeryComponent,
     
     
     
