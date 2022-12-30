@@ -78,6 +78,9 @@ import { DressComponent } from './aproduct/dress/dress.component';
 import { ToysComponent } from './aproduct/toys/toys.component';
 import { JwelleryComponent } from './aproduct/jwellery/jwellery.component';
 import { StationeryComponent } from './aproduct/stationery/stationery.component';
+import { DemopostComponent } from './demopost/demopost.component';
+import { PostdetailsComponent } from './postdetails/postdetails.component';
+ 
  
  
  
@@ -156,6 +159,9 @@ import { StationeryComponent } from './aproduct/stationery/stationery.component'
     ToysComponent,
     JwelleryComponent,
     StationeryComponent,
+    DemopostComponent,
+    PostdetailsComponent,
+  
     
     
     
