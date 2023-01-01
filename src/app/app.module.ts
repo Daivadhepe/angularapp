@@ -56,15 +56,12 @@ import { PipeAssign1Component } from './pipe-assign1/pipe-assign1.component';
 import { FilterPipeComponent } from './filter-pipe/filter-pipe.component';
 import { FilterPipePipe } from './pipes/filter-pipe.pipe';
 import { AboutusComponent } from './aboutus/aboutus.component';
-import { ProductComponent } from './product/product.component';
+ 
 import { ContactusComponent } from './contactus/contactus.component';
 import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
-import { TvComponent } from './product/tv/tv.component';
-import { LaptopComponent } from './product/laptop/laptop.component';
-import { TabletComponent } from './product/tablet/tablet.component';
-import { WashingmachinComponent } from './product/washingmachin/washingmachin.component';
+ 
 import { GenderPipe } from './pipes/gender.pipe';
 import { SearchGenderPipe } from './pipes/search-gender.pipe';
 import { CustomPipeAssignComponent } from './custom-pipe-assign/custom-pipe-assign.component';
@@ -80,6 +77,11 @@ import { JwelleryComponent } from './aproduct/jwellery/jwellery.component';
 import { StationeryComponent } from './aproduct/stationery/stationery.component';
 import { DemopostComponent } from './demopost/demopost.component';
 import { PostdetailsComponent } from './postdetails/postdetails.component';
+import { ProductsModule } from './product/products.module';
+import { UtilityModule } from './models/utility.module';
+import { DeletmethodComponent } from './deletmethod/deletmethod.component';
+import { RapidapiComponent } from './rapidapi/rapidapi.component';
+import { Rapidapi2Component } from './rapidapi2/rapidapi2.component';
  
  
  
@@ -99,8 +101,7 @@ import { PostdetailsComponent } from './postdetails/postdetails.component';
     AssignngForDirectivesComponent,
     AssignngSwitchComponent,
     AttributeComponent,
-    
-    AssignCustomDireDirective,
+ 
      
     NgClassAttributeComponent,
     ChildComponent,
@@ -137,15 +138,12 @@ import { PostdetailsComponent } from './postdetails/postdetails.component';
     FilterPipeComponent,
     FilterPipePipe,
     AboutusComponent,
-    ProductComponent,
+    
     ContactusComponent,
     HomeComponent,
     LoginComponent,
     PageNotFoundComponent,
-    TvComponent,
-    LaptopComponent,
-    TabletComponent,
-    WashingmachinComponent,
+     
     GenderPipe,
     SearchGenderPipe,
     CustomPipeAssignComponent,
@@ -161,6 +159,9 @@ import { PostdetailsComponent } from './postdetails/postdetails.component';
     StationeryComponent,
     DemopostComponent,
     PostdetailsComponent,
+    DeletmethodComponent,
+    RapidapiComponent,
+    Rapidapi2Component,
   
     
     
@@ -169,11 +170,14 @@ import { PostdetailsComponent } from './postdetails/postdetails.component';
     
   ],
   imports: [
+   
     BrowserModule,
+    ProductsModule,
     AppRoutingModule,
     FormsModule,
     ReactiveFormsModule,
      HttpClientModule,
+     UtilityModule
   ],
   providers: [ ],
   bootstrap: [AppComponent]

@@ -1,0 +1,26 @@
+<p>rapidapi2 works!</p>
+<h1> Rapid API News Data </h1>
+<table class="table table-dark" style="color: rgb(5, 186, 60); font-size: small;">
+    <thead>
+        <tr>
+            <th scope="col"> Card </th>
+            <th scope="col"> Date </th>
+            <th scope="col"> ID</th>
+            <th scope="col">LongURL </th>
+            <th scope="col"> ThumbnailImage</th>
+            <th scope="col">Title</th>
+
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let o of arrNews"> 
+<td>{{o.card}}</td>
+<td>{{o.date}}</td>
+<td>{{o.id}}</td>
+<td>{{o.longURL}}</td>
+<td>{{o.thumbnailImage}}</td>
+<td>{{o.title}}</td>
+
+        </tr>
+    </tbody>
+</table>

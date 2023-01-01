@@ -1,12 +1,14 @@
-import { Directive, ElementRef } from '@angular/core';
+import { Directive, ElementRef, Renderer2 } from '@angular/core';
 
 @Directive({
-  selector: '[ appAssignCustomDire  ]'
+  selector: '[appAssignCustomDire]'
 })
 export class AssignCustomDireDirective {
 
-  constructor( ) { 
+  constructor(private el:ElementRef,private render:Renderer2 ) { 
+    console.log('custom directive applied');
     
+    render.setStyle(el.nativeElement,'backgroundColor','green')
   }
 
 }

@@ -1,0 +1,19 @@
+export class Quote{
+    card:string;
+    country:string;
+    currency:string;
+    id:string;
+    name:string;
+    region:string;
+    resourceId:string;
+    resourceSubtype:string;
+    resourceType:string;
+    securityType:string;
+    symbol:string;
+    template:string;
+    ticker:string;
+    tickerName:string;
+    tinyName:string;
+    title:string;
+     watchlist:boolean;
+}
