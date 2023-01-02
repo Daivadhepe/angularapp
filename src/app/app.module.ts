@@ -82,6 +82,7 @@ import { UtilityModule } from './models/utility.module';
 import { DeletmethodComponent } from './deletmethod/deletmethod.component';
 import { RapidapiComponent } from './rapidapi/rapidapi.component';
 import { Rapidapi2Component } from './rapidapi2/rapidapi2.component';
+import { FirebaseComponent } from './firebase/firebase.component';
  
  
  
@@ -162,6 +163,7 @@ import { Rapidapi2Component } from './rapidapi2/rapidapi2.component';
     DeletmethodComponent,
     RapidapiComponent,
     Rapidapi2Component,
+    FirebaseComponent,
   
     
     
