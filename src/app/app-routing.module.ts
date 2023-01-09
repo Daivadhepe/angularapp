@@ -1,6 +1,6 @@
  
   import { NgModule } from '@angular/core';
-import { Routes, RouterModule } from '@angular/router';
+import { Routes, RouterModule, PreloadingStrategy, PreloadAllModules } from '@angular/router';
 // import { AContactUsComponent } from './acontact-us/acontact-us.component';
 // import { AHomeComponent } from './ahome/ahome.component';
 // import { AloginPageComponent } from './alogin-page/alogin-page.component';
@@ -38,6 +38,8 @@ const routes: Routes = [
  
  {path:'demopost',component:DemopostComponent},
  {path:'postdetails/:id',component:PostdetailsComponent},
+ {path:'product',loadChildren:'./product/products.module#ProductsModule'},
+ {path:'orders',loadChildren:'./orders/orders.module#OrdersModule'},
   {path:'**',component:PageNotFoundComponent},
 ];
 
@@ -64,10 +66,15 @@ const routes: Routes = [
 
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes,{preloadingStrategy:PreloadAllModules})],
   exports: [RouterModule]
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {
+  constructor(){
+    console.log(' AppRoutingModule loaded');
+    
+  }
+ }
 
  
  

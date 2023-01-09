@@ -8,14 +8,10 @@ import { ProductComponent } from './product.component';
 import { RouterModule, Routes } from '@angular/router';
  
 import { UtilityModule } from '../models/utility.module';
+import { ProroutingRoutingModule } from './prorouting/prorouting-routing.module';
 
 const prodRoutes: Routes = [
-  { path:'product',component: ProductComponent, children:[
-    {path:'laptop', component:LaptopComponent},
-    {path:'tablet', component: TabletComponent},
-    {path:'tv', component: TvComponent},
-    {path:'washingmachin', component:WashingmachinComponent},
-  ]}, // localhost://4200/product
+ 
 ]
 
 @NgModule({
@@ -24,16 +20,22 @@ const prodRoutes: Routes = [
     TabletComponent,
     TvComponent,
     WashingmachinComponent,
-    ProductComponent,
+    ProductComponent, 
      
   ],
   imports: [
     CommonModule,
     RouterModule.forChild(prodRoutes),
-    UtilityModule
+    UtilityModule,
+    ProroutingRoutingModule
  ],
   exports:[
     RouterModule
   ]
 })
-export class ProductsModule { }
+export class ProductsModule {
+  constructor(){
+    console.log('ProductsModule loaded');
+    
+  }
+ }

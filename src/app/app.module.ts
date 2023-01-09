@@ -83,6 +83,9 @@ import { DeletmethodComponent } from './deletmethod/deletmethod.component';
 import { RapidapiComponent } from './rapidapi/rapidapi.component';
 import { Rapidapi2Component } from './rapidapi2/rapidapi2.component';
 import { FirebaseComponent } from './firebase/firebase.component';
+import { RxjsCompComponent } from './rxjs-comp/rxjs-comp.component';
+import { OrdersModule } from './orders/orders.module';
+ 
  
  
  
@@ -164,6 +167,8 @@ import { FirebaseComponent } from './firebase/firebase.component';
     RapidapiComponent,
     Rapidapi2Component,
     FirebaseComponent,
+    RxjsCompComponent,
+    
   
     
     
@@ -172,10 +177,9 @@ import { FirebaseComponent } from './firebase/firebase.component';
     
   ],
   imports: [
-   
-    BrowserModule,
-    ProductsModule,
+     
     AppRoutingModule,
+    BrowserModule,
     FormsModule,
     ReactiveFormsModule,
      HttpClientModule,
@@ -184,4 +188,9 @@ import { FirebaseComponent } from './firebase/firebase.component';
   providers: [ ],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule { 
+  constructor(){
+    console.log('AppModule loaded');
+    
+  }
+}

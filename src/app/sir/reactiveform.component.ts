@@ -83,7 +83,7 @@ export class ReactiveformComponent implements OnInit {
     this.fireBasePost.course = this.myReactiveForm['controls'].course.value;
     this.fireBasePost.gender = this.myReactiveForm['controls']. gender.value;
     this.fireBasePost.skills = this.myReactiveForm['controls'].skills.value;
-    // console.log('reactive form data' , this.fireBasePost);
+    // console.log('reactive form data' , this.fireBasePost); 
     
     this._firebaseService.createPostDataReactiveForm(this.fireBasePost).subscribe(res=>{
       console.log('Post from reactive form',res);
