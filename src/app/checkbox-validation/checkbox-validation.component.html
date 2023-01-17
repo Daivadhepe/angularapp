@@ -1,0 +1,13 @@
+<p>reactcomp1 works!</p>
+<form [formGroup]="myForm" (ngSubmit)="onSubmit()"><br><br>
+    <input type="text" placeholder="Enter user first name" formControlName="firstName"><br><br>
+    <input type="text" placeholder="Enter user last name" formControlName="lastName"><br><br>
+    <input type="text" placeholder="Enter user email" formControlName="email"><br><br>
+    <input type="checkbox"  id="checkbox" (click)="checkboxxses(cdata.value)" #cdata>checkbox <br> <br>
+    <div *ngIf="checkbox">
+        <input type="password" placeholder="Enter user password" formControlName="password" #pass><br><br>
+        <input type="password" placeholder="Enter user confirm password" formControlName=" conformPassword" #confirmpass (blur)="checkpass(pass.value,  conformPassword.value)"><br><br>
+        <div class="text-danger" *ngIf=" conformPassword">Password Mismatch</div>
+    </div>
+    <button class="btn btn-primary">Submit</button>
+</form>

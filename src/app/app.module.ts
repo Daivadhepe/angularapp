@@ -85,7 +85,9 @@ import { Rapidapi2Component } from './rapidapi2/rapidapi2.component';
 import { FirebaseComponent } from './firebase/firebase.component';
 import { RxjsCompComponent } from './rxjs-comp/rxjs-comp.component';
 import { OrdersModule } from './orders/orders.module';
-//import { PasswordValidationComponent } from './password-validation/password-validation.component';
+import { CheckboxValidationComponent } from './checkbox-validation/checkbox-validation.component';
+import { AddUserComponent } from './add-user/add-user.component';
+ 
  
  
  
@@ -169,7 +171,9 @@ import { OrdersModule } from './orders/orders.module';
     Rapidapi2Component,
     FirebaseComponent,
     RxjsCompComponent,
-    //PasswordValidationComponent,
+    CheckboxValidationComponent,
+    AddUserComponent,
+   
     
   ],
   imports: [

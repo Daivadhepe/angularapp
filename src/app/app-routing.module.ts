@@ -17,6 +17,8 @@ import { Routes, RouterModule, PreloadingStrategy, PreloadAllModules } from '@an
 
 
 import { AboutusComponent } from './aboutus/aboutus.component';
+import { AddUserComponent } from './add-user/add-user.component';
+import { AuthGuard } from './auth.guard';
 import { ContactusComponent } from './contactus/contactus.component';
 import { DemopostComponent } from './demopost/demopost.component';
  
@@ -24,6 +26,7 @@ import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { PostdetailsComponent } from './postdetails/postdetails.component';
+import { UnsavedChangesGuard } from './unsaved-changes.guard';
  
  
 
@@ -36,9 +39,10 @@ const routes: Routes = [
   
   { path:'contactus', component: ContactusComponent},//localhost://4200/contactus 
  
- {path:'demopost',component:DemopostComponent},
+ {path:'demopost',canActivate:[AuthGuard],component:DemopostComponent},
  {path:'postdetails/:id',component:PostdetailsComponent},
- {path:'product',loadChildren:'./product/products.module#ProductsModule'},
+ {path:'addUser',component:AddUserComponent,canDeactivate:[UnsavedChangesGuard]},
+ {path:'product',canActivate:[AuthGuard],loadChildren:'./product/products.module#ProductsModule'},
  {path:'orders',loadChildren:'./orders/orders.module#OrdersModule'},
   {path:'**',component:PageNotFoundComponent},
 ];
